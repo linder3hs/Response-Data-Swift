@@ -12,7 +12,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        //Para que cargue ni bien abra la app
+        let dwn = ApiResponse()
+        dwn.downloadData()
     }
 
     override func didReceiveMemoryWarning() {
